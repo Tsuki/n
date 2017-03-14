@@ -227,7 +227,7 @@ show_cursor() {
 #
 
 next_version_installed() {
-  list_versions_installed | grep $selected -A 1 | tail -n 1
+  list_versions_installed | grep "$selected" -A 1 | tail -n 1
 }
 
 #
@@ -235,7 +235,7 @@ next_version_installed() {
 #
 
 prev_version_installed() {
-  list_versions_installed | grep $selected -B 1 | head -n 1
+  list_versions_installed | grep "$selected" -B 1 | head -n 1
 }
 
 #
